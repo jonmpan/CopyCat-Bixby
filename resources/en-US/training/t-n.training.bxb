@@ -1,0 +1,5 @@
+train (t-nn8r1aqb7k0s2rjsj0qmr2eud) {
+  utterance ("[g:CopyCat] (foo bar foo bar foo bar foo bar foo bar foo bar)[v:Input]")
+  plan (Y2BmEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPVMDIxAzAAkGRlAAMoHAA==)
+  last-modified (1571875110390)
+}

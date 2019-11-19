@@ -1,0 +1,5 @@
+action (GetVoices) {
+  type (Search)
+  description (__DESCRIPTION__)
+  output (VoiceChoice)
+}

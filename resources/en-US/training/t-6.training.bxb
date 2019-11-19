@@ -1,0 +1,10 @@
+train (t-65wkc9n8m0p651wb7krz5qjem) {
+  utterance ([g:CopyCat,v:ResetInput:true] Change Input)
+  plan (Y2BhEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPVS6MJBqcWpJRA5ZgZGBiYgyQCkQRACmIAsoBgA)
+  last-modified (1574125075539)
+}
+train (t-6foufhobba29g06glcrt9kirh) {
+  utterance ([g:CopyCat,v:ResetVoice:true] change voice)
+  plan (Y2BhEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPVS6MJBqcWpJWH5mcmpDMwMjAxMQJIBSIMgBDABWUAxAA==)
+  last-modified (1574119227652)
+}

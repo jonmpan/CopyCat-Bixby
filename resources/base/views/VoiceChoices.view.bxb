@@ -1,0 +1,36 @@
+input-view{
+	match:VoiceChoice(choices)
+	
+	message{
+		choose (Random){
+				template ("Which charming voice would you like to hear?")
+			template ("Whose voice would you like to use?")
+		}
+	}
+
+	render{
+		selection-of (choices){
+			select-button-text(Derp)
+			where-each (voice){
+				cell-card{
+					slot1{
+						if (exists(voice.portrait)){
+							image{
+								url("#{value(voice.portrait)}")
+								shape (Square)
+								background-color (Transparent)
+							}
+						}
+					}
+					slot2{
+						content{
+							primary("#{value(voice.voice)}")
+							secondary("#{value(voice.language)}")
+							// secondary("#{value(voice.description)}")
+						}
+					}
+				}
+			}
+		}
+	}
+}

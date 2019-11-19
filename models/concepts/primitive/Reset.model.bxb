@@ -1,0 +1,3 @@
+boolean (Reset) {
+  description (If true, resets both the Input and Voice models)
+}

@@ -1,0 +1,23 @@
+vocab(Voice){
+	"Stephanie" {"Stephanie"}
+	"John" {"John"}
+  "Lisa" {"Lisa"}
+  "Julia" {"Julia"}
+  "Amy" {"Amy"}
+  "Chris" {"Chris"}
+  "Esther" {"Esther"}
+  "Eugene" {"Eugene"}
+  "Sarah" {"Sarah"}
+  "Larry" {"Larry"}
+  "Eunice" {"Eunice"}
+  "Adam" {"Adam"}
+  "Azalea" {"Azalea"}
+  "Mary" {"Mary"}
+  "William" {"William"}
+  "Sandra" {"Sandra"}
+  "David" {"David"}
+  "Michelle" {"Michelle"}
+  "Pierre" {"Pierre"}
+  "Angela" {"Angela"}
+  "Andrea" {"Andrea"}
+}

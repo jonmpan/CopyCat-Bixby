@@ -1,0 +1,15 @@
+endpoints {
+	action-endpoints {
+		action-endpoint (CopyCat) {
+			accepted-inputs (reset, resetInput, resetVoice, voice, input)
+			local-endpoint (CopyCat.js)
+		}
+		action-endpoint (GetVoices){
+			local-endpoint (GetVoices.js)
+		}
+		action-endpoint (ExtractVoiceFromVoiceChoice) {
+			accepted-inputs (voiceChoice)
+			local-endpoint (ExtractVoiceFromVoiceChoice.js)
+		}
+	}
+}

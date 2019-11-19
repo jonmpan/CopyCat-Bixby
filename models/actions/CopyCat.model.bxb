@@ -1,0 +1,68 @@
+action (CopyCat) {
+	type (Calculation)
+	description (__DESCRIPTION__)
+	collect {
+		input (reset) {
+			type (Reset)
+			min (Optional) max (One)
+		}
+		input (resetInput) {
+			type (ResetInput)
+			min (Optional) max (One)
+		}
+		input (resetVoice) {
+			type (ResetVoice)
+			min (Optional) max (One)
+		}
+		input (input) {
+			type (Input)
+			min (Required) max (One)
+		}
+		input (voice) {
+			type (Voice)
+			min (Optional) max (One)
+
+		}
+	}
+	output (Output)
+	{
+		throws {
+			error (Reset) {
+				on-catch {
+					replan {
+						dialog("Reset All Error")
+						intent {
+							goal:CopyCat
+						}
+					}
+				}
+			}
+			error (ResetInput) {
+				on-catch {
+					replan {
+						dialog("Reset Input Error")
+						intent {
+							goal:CopyCat
+							value:$expr(voice)
+						}
+					}
+				}
+			}
+			error (ResetVoice) {
+				on-catch {
+					replan {
+						dialog("Reset Voice Error")
+						intent {
+							goal:CopyCat
+							value:ResetVoice(false)
+							value:$expr(input)
+							subplan {
+								goal: GetVoices
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

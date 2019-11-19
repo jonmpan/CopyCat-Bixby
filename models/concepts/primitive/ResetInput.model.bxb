@@ -1,0 +1,3 @@
+boolean (ResetInput) {
+  description (If true, resets the Input model)
+}

@@ -1,0 +1,21 @@
+structure (VoiceChoice) {
+	property (voice) {
+		type (Voice)
+		min (Required) max (One)
+	}
+	property (description) {
+		type (viv.core.Text)
+		min (Required) max (One)
+		visibility (Private)
+	}
+	property (language) {
+		type (viv.core.Text)
+		min (Required) max (One)
+		visibility (Private)
+	}
+	property (portrait) {
+		type (viv.core.Text)
+		min (Optional) max (One)
+		visibility (Private)
+	}
+}

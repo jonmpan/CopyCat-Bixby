@@ -1,0 +1,14 @@
+hints {
+  uncategorized{
+    hint (Ask Copy Cat to copy Yo what's up! I'm the CopyCat capsule and I'll say whatever you want me to say!)
+    hint (Ask Copy Cat to say I'm hungry)
+    hint (Ask Copy Cat to start)
+    // hint (Ask Copy Cat to say You never see elephants hiding in trees. I guess they must be really good at it.)
+    // hint (Ask Copy Cat to say 111222333444555666777888999)
+    // hint (Ask Copy Cat to say The person who invented auto correct should burn in hello.)
+    // hint (Ask Copy Cat to say 1&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&2)
+    // hint (Ask Copy Cat to say 0.1111111111111111111111111111111 0.2222222222222222222 111222333444555666777888999 938475039485761231873645871.1029485748839910)
+    // hint (Ask Copy Cat to say herp derp poop slurp burp shlurp herp derp poop slurp burp shlurp herp derp poop slurp burp shlurp herp derp poop slurp burp shlurp herp derp poop slurp burp shlurp herp derp poop)
+    // hint (Ask Copy Cat to say oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioi)
+  }
+}

@@ -1,0 +1,50 @@
+result-view{
+	match:Output(output)
+	
+	message{
+		if (output.dialog == true){
+			template ("#{title(output.text)}"){
+				speech ("#{title(output.speech)}")
+			}
+		} else {
+			template (){
+				speech ("#{title(output.speech)}")
+			}
+		}
+	}
+	
+	render{
+		layout{
+			section{
+				content{
+					if (output.dialog == false){
+						paragraph("#{title(output.text)}")
+					}
+					spacer
+					if (exists(output.voice)){
+						single-line{
+							text{
+								style (Detail_M_Soft)
+								value ("Now Speaking: #{title(output.voice)}")
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	conversation-drivers{
+		conversation-driver{
+			template ("Change Voice")
+		}
+		conversation-driver{
+			template ("Change Input")
+		}
+		conversation-driver{
+			template ("Start Over")
+		}
+		conversation-driver{
+			template ("Repeat")
+		}
+	}
+}

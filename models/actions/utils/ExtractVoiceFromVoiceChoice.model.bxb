@@ -1,0 +1,11 @@
+action (ExtractVoiceFromVoiceChoice) {
+  description ()
+  type (Constructor)
+  collect {
+    input (voiceChoice) {
+      type (VoiceChoice)
+      min (Required) max (One)
+    }
+  }
+  output (Voice)
+}

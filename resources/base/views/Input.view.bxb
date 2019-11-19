@@ -1,0 +1,32 @@
+input-view{
+  match:Input(input){
+    to-input:CopyCat(action)
+  }
+
+  message{
+    if(exists(action.voice)){
+      template("What would you like #{title(action.voice)} to say?")
+
+    } else {
+      template("What would you like me to say?")
+    }
+  }
+
+  render{
+    form{
+      elements{
+        textarea{
+          max-length (10000)
+          id (input)
+          type (Input)
+          label (I will copy whatever you put in this box)
+          required (true)
+        }
+      }
+      on-submit{
+        goal: Input
+        value: viv.core.FormElement(input)
+      }
+    }
+  }
+}

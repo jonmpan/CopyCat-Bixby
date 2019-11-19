@@ -1,0 +1,17 @@
+capsule-info {
+  display-name (CopyCat)
+  developer-name (JohnWithoutTheH)
+  icon-asset (images/cat-icon.png)
+  description ("A clever cat that copies what you say.")
+  // privacy-policy-url (https://www.jonmpan.com/privacy)
+  search-keywords{
+    keyword (Repeat after me)
+    keyword (simon says)
+    keyword (kittens)
+    keyword (copier)
+  }
+  dispatch-name (Copy Cat)
+  dispatch-aliases{
+    alias (CopyCat)
+  }
+}

@@ -1,0 +1,22 @@
+structure (Output){
+  property (text){
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (speech){
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (voice){
+    type (Voice)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  property (dialog){
+    type (viv.core.Boolean)
+    min (Required) max (One)
+    visibility (Private)
+  }
+}

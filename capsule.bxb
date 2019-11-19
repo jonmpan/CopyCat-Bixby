@@ -1,0 +1,30 @@
+capsule {
+	id (jonmpan.copycat)
+	version (0.0.14)
+	format (3)
+	targets {
+		target (bixby-mobile-en-US)
+	}
+	permissions{
+		bixby-user-id-access
+	}
+	runtime-flags {
+		allow-dialogs-on-detail-pages
+		modern-default-view-behavior
+		use-input-views-for-selection-list-detail
+		no-filtering-with-validation
+		concepts-inherit-super-type-features
+		modern-prompt-rejection
+		support-halt-effect-in-computed-inputs
+	}
+	capsule-imports {
+		import (bixby.audioPlayer) {
+			version (0.3.13)
+			as (audioPlayer)
+		}
+	}
+	store-sections{
+		section (GamesAndFun)
+		section (Utilities)
+	}
+}
