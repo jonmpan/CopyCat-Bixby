@@ -2,14 +2,11 @@ capsule {
 	store-countries{
 		all
 	}
-	id (jonmpan.copycat)
+	id (playground.copycat)
 	version (0.0.14)
 	format (3)
 	targets {
 		target (bixby-mobile-en-US)
-	}
-	permissions{
-		bixby-user-id-access
 	}
 	runtime-flags {
 		allow-dialogs-on-detail-pages
