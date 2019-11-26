@@ -1,0 +1,11 @@
+action (GetInput) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (input) {
+      type (Input)
+      min (Required) max (One)
+    }
+  }
+  output (Input)
+}

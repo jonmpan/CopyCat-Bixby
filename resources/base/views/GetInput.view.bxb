@@ -1,0 +1,27 @@
+input-view{
+	match:Input(input){
+		to-input:GetInput(action)
+	}
+	
+	message{
+		template("What would you like me to say? From GetInput")
+	}
+	
+	render{
+		form{
+			elements{
+				textarea{
+					max-length (10000)
+					id (input)
+					type (Input)
+					label (I will copy whatever you put in this box)
+					required (true)
+				}
+			}
+			on-submit{
+				goal: Input
+				value: viv.core.FormElement(input)
+			}
+		}
+	}
+}

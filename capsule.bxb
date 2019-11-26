@@ -1,4 +1,7 @@
 capsule {
+	store-countries{
+		all
+	}
 	id (jonmpan.copycat)
 	version (0.0.14)
 	format (3)
@@ -16,12 +19,6 @@ capsule {
 		concepts-inherit-super-type-features
 		modern-prompt-rejection
 		support-halt-effect-in-computed-inputs
-	}
-	capsule-imports {
-		import (bixby.audioPlayer) {
-			version (0.3.13)
-			as (audioPlayer)
-		}
 	}
 	store-sections{
 		section (GamesAndFun)

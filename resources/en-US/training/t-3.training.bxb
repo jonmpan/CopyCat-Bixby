@@ -1,5 +1,10 @@
-train (t-3wna9elqvi3uohsj6a7pabb1n) {
-  utterance ("[g:CopyCat] ask (John)[v:Voice:John] to (say Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp)[v:Input]")
+train (t-3pvkfj4059p5wj2m9922hlboo) {
+  utterance ("[g:CopyCat] Say (Help me, I'm trapped)[v:Input] with (John)[v:Voice:John]'s voice")
   plan (Y2BhEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPUYwmH5mcmpDMwMjAxMQJIBSIMgBMBFAQ==)
-  last-modified (1574124241256)
+  last-modified (1574728258279)
+}
+train (t-3wna9elqvi3uohsj6a7pabb1n) {
+  utterance ("[g:CopyCat] ask (John)[v:Voice:John] to say (Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp Herp Derp)[v:Input]")
+  plan (Y2BhEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPUYwmH5mcmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1574723504716)
 }

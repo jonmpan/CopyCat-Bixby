@@ -1,19 +1,15 @@
 structure (VoiceChoice) {
+	description (This structure gets returned to the user to select a voice)
 	property (voice) {
 		type (Voice)
 		min (Required) max (One)
-	}
-	property (description) {
-		type (viv.core.Text)
-		min (Required) max (One)
-		visibility (Private)
 	}
 	property (language) {
 		type (viv.core.Text)
 		min (Required) max (One)
 		visibility (Private)
 	}
-	property (portrait) {
+	property (image) {
 		type (viv.core.Text)
 		min (Optional) max (One)
 		visibility (Private)

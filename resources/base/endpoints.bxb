@@ -1,7 +1,7 @@
 endpoints {
 	action-endpoints {
 		action-endpoint (CopyCat) {
-			accepted-inputs (reset, resetInput, resetVoice, voice, input)
+			accepted-inputs (reset, resetInput, resetVoice, input, voice)
 			local-endpoint (CopyCat.js)
 		}
 		action-endpoint (GetVoices){
@@ -10,6 +10,14 @@ endpoints {
 		action-endpoint (ExtractVoiceFromVoiceChoice) {
 			accepted-inputs (voiceChoice)
 			local-endpoint (ExtractVoiceFromVoiceChoice.js)
+		}
+		action-endpoint (GetInput){
+			accepted-inputs (input)
+			local-endpoint (GetInput.js)
+		}
+		action-endpoint (CheckModels){
+			accepted-inputs (reset, resetInput, resetVoice, input, voice, output)
+			local-endpoint (CheckModels.js)
 		}
 	}
 }

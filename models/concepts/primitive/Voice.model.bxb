@@ -1,5 +1,6 @@
 enum (Voice) {
   description (The voices that Bixby can use to speak to the user)
+  // features{transient}
   symbol (Stephanie)
   symbol (John)
   symbol (Lisa)
@@ -12,7 +13,7 @@ enum (Voice) {
   symbol (Larry)
   symbol (Eunice)
   symbol (Adam)
-  symbol (Azalea)
+  symbol (Fanny)
   symbol (Mary)
   symbol (William)
   symbol (Sandra)

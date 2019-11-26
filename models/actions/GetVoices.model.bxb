@@ -1,5 +1,5 @@
 action (GetVoices) {
   type (Search)
-  description (__DESCRIPTION__)
+  description (Helper action that pulls up all the voice choices)
   output (VoiceChoice)
 }

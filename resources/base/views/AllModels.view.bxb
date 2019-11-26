@@ -1,0 +1,252 @@
+result-view{
+	match:AllModels(this)
+	
+	message("Here are all the models stored in Bixby's session's state.")
+	
+	render{
+		layout{
+			section{
+				content{
+					single-line{
+						text{
+							value("Voice")
+							style(Detail_M_Soft)
+						}
+					}
+					if(exists(this.voice)){
+						paragraph{
+							value("#{value(this.voice)}")
+						}
+					} else {
+						single-line{
+							text{
+								value("Undefined")
+								style(Detail_L)
+								color (Red)
+							}
+						}
+					}
+					divider
+					divider
+					divider
+					divider
+					
+					single-line{
+						text{
+							value("Input")
+							style(Detail_M_Soft)
+						}
+					}
+					if(exists(this.input)){
+						paragraph{
+							value("#{value(this.input)}")
+						}
+					} else {
+						single-line{
+							text{
+								value("Undefined")
+								style(Detail_L)
+								color (Red)
+							}
+						}
+					}
+					
+					
+					
+					divider
+					
+					hbox{
+						content{
+							vbox{
+								halign (Start)
+								content{
+									single-line{
+										text{
+											value("Reset")
+											style(Detail_M_Soft)
+										}
+									}
+									if(exists(this.reset)){
+										single-line{
+											text{
+												value("#{value(this.reset)}")
+                        style(Detail_L)
+											}
+										}
+									} else {
+										single-line{
+											text{
+												value("Undefined")
+												style(Detail_L)
+												color (Red)
+											}
+										}
+									}
+								}
+							}
+							vbox{
+								content{
+									single-line{
+										text{
+											value("ResetInput")
+											style(Detail_M_Soft)
+										}
+									}
+									if(exists(this.resetInput)){
+										single-line{
+											text{
+												value("#{value(this.resetInput)}")
+                        style(Detail_L)
+											}
+										}
+									} else {
+										single-line{
+											text{
+												value("Undefined")
+												style(Detail_L)
+												color (Red)
+											}
+										}
+									}
+								}
+							}
+							vbox{
+								halign (End)
+								content{
+									single-line{
+										text{
+											value("ResetVoice")
+											style(Detail_M_Soft)
+										}
+									}
+									if(exists(this.resetVoice)){
+										single-line{
+											text{
+												value("#{value(this.resetVoice)}")
+                        style(Detail_L)
+											}
+										}
+									} else {
+										single-line{
+											text{
+												value("Undefined")
+												style(Detail_L)
+												color (Red)
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					divider
+					single-line{
+						text{
+							value("Output (Structure)")
+							style(Detail_L_Soft)
+						}
+					}
+					if(exists(this.output)){
+						hbox{
+							content{
+								vbox{
+									halign (Start)
+									content{
+										single-line{
+											text{
+												value("Voice:")
+												style(Detail_M_Soft)
+											}
+										}
+										if(exists(this.output.voice)){
+											single-line{
+												text{
+													value("#{value(this.output.voice)}")
+													style(Detail_L)
+												}
+											}
+										} else {
+											single-line{
+												text{
+													value("Undefined")
+													style(Detail_L)
+													color (Red)
+												}
+											}
+										}
+									}
+								}
+								vbox{
+									halign (End)
+									content{
+										single-line{
+											text{
+												value("Dialog:")
+												style(Detail_M_Soft)
+											}
+										}
+										single-line{
+											text{
+												value("#{value(this.output.dialog)}")
+												style(Detail_L)
+											}
+										}
+									}
+								}
+							}
+						}
+						single-line{
+							text{
+								value("Text:")
+								style(Detail_M_Soft)
+							}
+						}
+						paragraph{
+							value("#{value(this.output.text)}")
+						}
+						
+						single-line{
+							text{
+								value("Speech:")
+								style(Detail_M_Soft)
+							}
+						}
+						paragraph{
+							value("#{value(this.output.speech)}")
+						}
+						
+					} else {
+						single-line{
+							text{
+								value("Undefined")
+								style(Detail_L)
+								color (Red)
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	conversation-drivers{
+		conversation-driver{
+			template ("Check Models")
+		}
+		conversation-driver{
+			template ("CopyCat")
+		}
+		conversation-driver{
+			template ("Change Voice")
+		}
+		conversation-driver{
+			template ("Change Input")
+		}
+		conversation-driver{
+			template ("Start Over")
+		}
+		conversation-driver{
+			template ("Repeat")
+		}
+	}
+}

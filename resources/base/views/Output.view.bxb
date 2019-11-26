@@ -35,6 +35,12 @@ result-view{
 	}
 	conversation-drivers{
 		conversation-driver{
+			template ("Check Models")
+		}
+		conversation-driver{
+			template ("CopyCat")
+		}
+		conversation-driver{
 			template ("Change Voice")
 		}
 		conversation-driver{

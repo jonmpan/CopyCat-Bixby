@@ -1,0 +1,31 @@
+action (CheckModels) {
+	type (Calculation)
+	description (Checks the models and shows them.)
+	collect {
+		input (reset) {
+			type (Reset)
+			min (Optional) max (One)
+		}
+		input (resetInput) {
+			type (ResetInput)
+			min (Optional) max (One)
+		}
+		input (resetVoice) {
+			type (ResetVoice)
+			min (Optional) max (One)
+		}
+		input (input) {
+			type (Input)
+			min (Optional) max (One)
+		}
+		input (voice) {
+			type (Voice)
+			min (Optional) max (One)
+		}
+		input (output) {
+			type (Output)
+			min (Optional) max (One)
+		}
+	}
+	output (AllModels)
+}

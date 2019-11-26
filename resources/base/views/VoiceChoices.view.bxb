@@ -14,9 +14,9 @@ input-view{
 			where-each (voice){
 				cell-card{
 					slot1{
-						if (exists(voice.portrait)){
+						if (exists(voice.image)){
 							image{
-								url("#{value(voice.portrait)}")
+								url("#{value(voice.image)}")
 								shape (Square)
 								background-color (Transparent)
 							}
@@ -26,7 +26,6 @@ input-view{
 						content{
 							primary("#{value(voice.voice)}")
 							secondary("#{value(voice.language)}")
-							// secondary("#{value(voice.description)}")
 						}
 					}
 				}

@@ -1,0 +1,27 @@
+structure (AllModels){
+  property (input){
+    type (Input)
+    min (Optional) max (One)
+  }
+  property (voice){
+    type (Voice)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  property (reset){
+    type (Reset)
+    min (Optional) max (One)
+  }
+  property (resetInput){
+    type (ResetInput)
+    min (Optional) max (One)
+  }
+  property (resetVoice){
+    type (ResetVoice)
+    min (Optional) max (One)
+  }
+  property (output){
+    type (Output)
+    min (Optional) max (One)
+  }
+}

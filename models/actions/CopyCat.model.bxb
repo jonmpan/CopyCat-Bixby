@@ -1,14 +1,33 @@
 action (CopyCat) {
 	type (Calculation)
-	description (__DESCRIPTION__)
+	description (The main action that copies what you say.)
 	collect {
 		input (reset) {
 			type (Reset)
 			min (Optional) max (One)
+			// uncomment this during the validate section
+			validate{
+				if (!exists(input)){
+					replan{
+						intent{
+							goal:Reset(false)
+						}
+					}
+				}
+			}
 		}
 		input (resetInput) {
 			type (ResetInput)
 			min (Optional) max (One)
+			validate{
+				if (!exists(input)){
+					replan{
+						intent{
+							goal:ResetInput(false)
+						}
+					}
+				}
+			}
 		}
 		input (resetVoice) {
 			type (ResetVoice)
@@ -21,7 +40,12 @@ action (CopyCat) {
 		input (voice) {
 			type (Voice)
 			min (Optional) max (One)
-
+			// min (Required) max (One) // comment out for final code
+			// default-init{
+			// 	intent{
+			// 		goal:GetVoices
+			// 	}
+			// }
 		}
 	}
 	output (Output)
@@ -30,7 +54,7 @@ action (CopyCat) {
 			error (Reset) {
 				on-catch {
 					replan {
-						dialog("Reset All Error")
+						dialog("Reset All Debug Message.")
 						intent {
 							goal:CopyCat
 						}
@@ -40,7 +64,7 @@ action (CopyCat) {
 			error (ResetInput) {
 				on-catch {
 					replan {
-						dialog("Reset Input Error")
+						dialog("Reset Input Debug Message.")
 						intent {
 							goal:CopyCat
 							value:$expr(voice)
@@ -51,7 +75,7 @@ action (CopyCat) {
 			error (ResetVoice) {
 				on-catch {
 					replan {
-						dialog("Reset Voice Error")
+						dialog("Reset Voice Debug Message.")
 						intent {
 							goal:CopyCat
 							value:ResetVoice(false)

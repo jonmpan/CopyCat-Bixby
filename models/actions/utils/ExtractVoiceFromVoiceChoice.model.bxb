@@ -1,5 +1,5 @@
 action (ExtractVoiceFromVoiceChoice) {
-  description ()
+  description (Pulls the voice out of the VoiceChoice structure and returns it. Used when a user clicks on a voice.)
   type (Constructor)
   collect {
     input (voiceChoice) {

@@ -1,3 +1,4 @@
 text (Input){
   description (What the user says to the capsule)
+  // features{transient}
 }
