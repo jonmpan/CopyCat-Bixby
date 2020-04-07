@@ -5,7 +5,6 @@ action (CopyCat) {
 		input (reset) {
 			type (Reset)
 			min (Optional) max (One)
-			// uncomment this during the validate section
 			validate{
 				if (!exists(input)){
 					replan{
@@ -40,12 +39,6 @@ action (CopyCat) {
 		input (voice) {
 			type (Voice)
 			min (Optional) max (One)
-			// min (Required) max (One) // comment out for final code
-			// default-init{
-			// 	intent{
-			// 		goal:GetVoices
-			// 	}
-			// }
 		}
 	}
 	output (Output)
@@ -78,7 +71,6 @@ action (CopyCat) {
 						dialog("Reset Voice Debug Message.")
 						intent {
 							goal:CopyCat
-							value:ResetVoice(false)
 							value:$expr(input)
 							subplan {
 								goal: GetVoices

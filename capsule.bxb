@@ -8,17 +8,10 @@ capsule {
 	targets {
 		target (bixby-mobile-en-US)
 	}
-	runtime-flags {
-		allow-dialogs-on-detail-pages
-		modern-default-view-behavior
-		use-input-views-for-selection-list-detail
-		no-filtering-with-validation
-		concepts-inherit-super-type-features
-		modern-prompt-rejection
-		support-halt-effect-in-computed-inputs
-	}
+	runtime-version (2)
 	store-sections{
 		section (GamesAndFun)
 		section (Utilities)
 	}
 }
+ 

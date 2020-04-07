@@ -1,5 +1,5 @@
 train (t-vwzyo5ifm68iweusk3klwvpqf) {
-  utterance ("[g:CopyCat] ask (John)[v:Voice:John] to say (hello world)[v:Input]")
-  plan (Y2BhEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPUYwmH5mcmpDMwMjAxMQJIBSIMgBMBFAQ==)
-  last-modified (1573672325596)
+  utterance ("[g:CopyCat] ask (John)[v:Voice:John] to say (I'm hungry)[v:Input]")
+  plan (Y2BhkCzISaxML8ovzUvRS84vqExOLNHzLy0pKC1hkMIi5QyknRNLGCSwyHnmgXRhkwnLz0xOZWBmYGRgApIMQBoEIQAuCgA=)
+  last-modified (1576521927211)
 }

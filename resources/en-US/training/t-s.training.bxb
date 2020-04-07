@@ -1,0 +1,5 @@
+train (t-ss7eh6boixh7tgsaqumaz1vm1) {
+  utterance ("[g:Input:prompt] Say (that with Julia's voice)[v:Input]")
+  plan (Y2BiEM3Kz8stSMzTS84vqExOLNHzzCsoLcElzAiEDAw8QMwExEA2AA==)
+  last-modified (1575494672300)
+}

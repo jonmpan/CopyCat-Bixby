@@ -1,4 +1,5 @@
 structure (Output){
+  features{transient}
   description (The output of the action Copy Cat. This is what gets shown to the user.)
   property (text){
     type (viv.core.Text)

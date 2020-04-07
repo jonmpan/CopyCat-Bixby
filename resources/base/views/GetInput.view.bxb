@@ -4,7 +4,7 @@ input-view{
 	}
 	
 	message{
-		template("What would you like me to say? From GetInput")
+		template("What would you like me to say?")
 	}
 	
 	render{

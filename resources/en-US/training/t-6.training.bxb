@@ -1,7 +1,7 @@
 train (t-65wkc9n8m0p651wb7krz5qjem) {
   utterance ([g:CopyCat,v:ResetInput:true] Change Input)
-  plan (Y2BhEMvKz8stSMzTS84vqExOLNHzLy0pKC1hEEcXdwbSzoklDKLoEp55IPVS6MJBqcWpJRA5ZgZGBiYgyQCkQRACmIAsoBgA)
-  last-modified (1574125075539)
+  plan (Y2BhkCzISaxML8ovzUvRS84vqExOLNHzLy0pKC1hkMIi5QyknRNLGCSwyHnmgXTJYpEJSi1OLYFIMzMwMjABSQYgDYIQwARkAcUA)
+  last-modified (1576522391651)
 }
 train (t-696hazv5lb13bl99a6jfmha5z) {
   utterance ("[g:CopyCat] say (Hello)[v:Input] with (John)[v:Voice:John]'s voice")
